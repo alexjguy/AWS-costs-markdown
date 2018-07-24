@@ -1,11 +1,10 @@
 import json
 import requests
 
-
+#Read EC2 JSON data into the variable
 ec2_url = 'https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/index.json'
 ec2_filename = 'ComputeInstance.json'
 
-#Read JSON data into the datastore variable
 if ec2_filename:
     try:
       with open(ec2_filename, 'r') as f:
@@ -19,10 +18,10 @@ else:
 
 ec2_products = ec2_data['products']
 
+#Read VPC JSON data into the  vaiable
 vpc_url = 'https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonVPC/current/index.json'
 vpc_filename = 'VPC.json'
 
-#Read JSON data into the datastore variable
 if vpc_filename:
     try:
       with open(vpc_filename, 'r') as f:
@@ -35,8 +34,14 @@ else:
     vpc_data = json.loads(resp.text)
 
 vpc_products = vpc_data['products']
+
+#the datacenter that we need output for
 location_filter = ["US East (Ohio)"]
+
+#the list of OS that we need
 operatingSystem_filter = ["RHEL", "Windows", "SUSE"]
+
+#the list of instance types that we need output for
 instanceType_filter = [
     "t2.nano",
     "t2.micro",
@@ -475,29 +480,6 @@ def ec2_pretty_print(ec2_dict):
               for k,v in v.items():
                 for k,v in v.items():
                   file.write("`"+k+" "+v+'`\n\n')
-
-
-
-
-#vpc
-#Data Transfer IN To Amazon EC2 From Internet
-#All data transfer in 0
-
-#Data Transfer OUT From Amazon EC2 To Internet
-#Up to 1 GB / Month
-#Next 9.999 TB / Month
-#Next 40 TB / Month
-#Next 100 TB / Month
-#Greater than 150 TB / Month
-
-#Data Transfer Across AZ within this Region
-#Data transferred "in" to and "out" of Amazon EC2, Amazon RDS, Amazon Redshift , Amazon DynamoDB Accelerator (DAX), and Amazon ElastiCache instances or Elastic Network Interfaces across VPC peering connections in the same AWS region is charged at $0.01/GB.
-#Data transferred "in" to and "out" of Amazon Elastic Load Balancing is priced equivalent to Amazon EC2. Data processed by Amazon Elastic Load Balancing will incur charges in addition to Amazon EC2 data transfer charges.
-#Using a public or Elastic IPv4 address is charged at $0.01/GB.
-#Using an IPv6 address from a different VPC is charged at $0.01/GB.
-#Amazon EC2, Amazon RDS, Amazon Redshift and Amazon ElastiCache instances or Elastic Network Interfaces in the same Availability Zone is $0.00/GB.
-
-#All data transfer in and out within the region	
 
 
 
