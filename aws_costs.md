@@ -2,449 +2,240 @@
 # Table of contents
 [**US East (Ohio)**](#US East (Ohio)) 
 
+[**Service : AmazonCloudWatch**](#AmazonCloudWatch) 
+
+[**Product Family : Data Payload**](#Data Payload) 
+
+[**Product Family : Storage Snapshot**](#Storage Snapshot) 
+
+[**Product Family : Metric**](#Metric) 
+
+[**Product Family : Alarm**](#Alarm) 
+
+[**Product Family : Dashboard**](#Dashboard) 
+
+[**Product Family : API Request**](#API Request) 
+
+[**Service : AmazonS3**](#AmazonS3) 
+
+[**Product Family : Storage**](#Storage) 
+
+[**Product Family : API Request**](#API Request) 
+
+[**Service : AWSDataTransfer**](#AWSDataTransfer) 
+
 [**Product Family : Data Transfer**](#Data Transfer) 
+
+[**Service : AmazonVPC**](#AmazonVPC) 
+
+[**Product Family : Cloud Connectivity**](#Cloud Connectivity) 
 
 [**Product Family : VpcEndpoint**](#VpcEndpoint) 
 
-[**Product Family : Cloud Connectivity**](#Cloud Connectivity) 
+[**Service : AmazonEC2**](#AmazonEC2) 
 
 [**Product Family : IP Address**](#IP Address) 
 
 [**Product Family : NAT Gateway**](#NAT Gateway) 
 
-[**Product Family : Compute Instance**](#Compute Instance) 
+[**Product Family : Storage**](#Storage) 
 
+[**Product Family : System Operation**](#System Operation) 
 
-[**RHEL**](#RHEL) 
+[**Product Family : Storage Snapshot**](#Storage Snapshot) 
 
-[t2.nano](#t2.nano) 
 
-[t2.micro](#t2.micro) 
 
-[t2.small](#t2.small) 
+[**Operating System : RHEL**](#RHEL) 
 
-[t2.medium](#t2.medium) 
+[t2.nano](#t2.nano) [t2.micro](#t2.micro) [t2.small](#t2.small) [t2.medium](#t2.medium) [t2.large](#t2.large) 
 
-[t2.large](#t2.large) 
+[t2.xlarge](#t2.xlarge) [t2.2xlarge](#t2.2xlarge) [m5d.large](#m5d.large) [m5d.xlarge](#m5d.xlarge) [m5d.2xlarge](#m5d.2xlarge) 
 
-[t2.xlarge](#t2.xlarge) 
+[m5d.4xlarge](#m5d.4xlarge) [m5d.12xlarge](#m5d.12xlarge) [m5d.24xlarge](#m5d.24xlarge) [m5.large](#m5.large) [m5.xlarge](#m5.xlarge) 
 
-[t2.2xlarge](#t2.2xlarge) 
+[m5.2xlarge](#m5.2xlarge) [m5.4xlarge](#m5.4xlarge) [m5.12xlarge](#m5.12xlarge) [m5.24xlarge](#m5.24xlarge) [m4.large](#m4.large) 
 
-[m5d.large](#m5d.large) 
+[m4.xlarge](#m4.xlarge) [m4.2xlarge](#m4.2xlarge) [m4.4xlarge](#m4.4xlarge) [m4.10xlarge](#m4.10xlarge) [m4.16xlarge](#m4.16xlarge) 
 
-[m5d.xlarge](#m5d.xlarge) 
+[c5d.large](#c5d.large) [c5d.xlarge](#c5d.xlarge) [c5d.2xlarge](#c5d.2xlarge) [c5d.4xlarge](#c5d.4xlarge) [c5d.9xlarge](#c5d.9xlarge) 
 
-[m5d.2xlarge](#m5d.2xlarge) 
+[c5d.18xlarge](#c5d.18xlarge) [c5.large](#c5.large) [c5.xlarge](#c5.xlarge) [c5.2xlarge](#c5.2xlarge) [c5.4xlarge](#c5.4xlarge) 
 
-[m5d.4xlarge](#m5d.4xlarge) 
+[c5.9xlarge](#c5.9xlarge) [c5.18xlarge](#c5.18xlarge) [c4.large](#c4.large) [c4.xlarge](#c4.xlarge) [c4.2xlarge](#c4.2xlarge) 
 
-[m5d.12xlarge](#m5d.12xlarge) 
+[c4.4xlarge](#c4.4xlarge) [c4.8xlarge](#c4.8xlarge) [g3.4xlarge](#g3.4xlarge) [g3.8xlarge](#g3.8xlarge) [g3.16xlarge](#g3.16xlarge) 
 
-[m5d.24xlarge](#m5d.24xlarge) 
+[p2.xlarge](#p2.xlarge) [p2.8xlarge](#p2.8xlarge) [p2.16xlarge](#p2.16xlarge) [p3.2xlarge](#p3.2xlarge) [p3.8xlarge](#p3.8xlarge) 
 
-[m5.large](#m5.large) 
+[p3.16xlarge](#p3.16xlarge) [r4.large](#r4.large) [r4.xlarge](#r4.xlarge) [r4.2xlarge](#r4.2xlarge) [r4.4xlarge](#r4.4xlarge) 
 
-[m5.xlarge](#m5.xlarge) 
+[r4.8xlarge](#r4.8xlarge) [r4.16xlarge](#r4.16xlarge) [d2.2xlarge](#d2.2xlarge) [d2.4xlarge](#d2.4xlarge) [d2.8xlarge](#d2.8xlarge) 
 
-[m5.2xlarge](#m5.2xlarge) 
+[h1.2xlarge](#h1.2xlarge) [h1.4xlarge](#h1.4xlarge) [h1.8xlarge](#h1.8xlarge) [h1.16xlarge](#h1.16xlarge) [i3.large](#i3.large) 
 
-[m5.4xlarge](#m5.4xlarge) 
+[i3.xlarge](#i3.xlarge) [i3.2xlarge](#i3.2xlarge) [i3.4xlarge](#i3.4xlarge) [i3.8xlarge](#i3.8xlarge) [i3.16xlarge](#i3.16xlarge) 
 
-[m5.12xlarge](#m5.12xlarge) 
 
-[m5.24xlarge](#m5.24xlarge) 
 
-[m4.large](#m4.large) 
+[**Operating System : Windows**](#Windows) 
 
-[m4.xlarge](#m4.xlarge) 
+[t2.nano](#t2.nano) [t2.micro](#t2.micro) [t2.small](#t2.small) [t2.medium](#t2.medium) [t2.large](#t2.large) 
 
-[m4.2xlarge](#m4.2xlarge) 
+[t2.xlarge](#t2.xlarge) [t2.2xlarge](#t2.2xlarge) [m5d.large](#m5d.large) [m5d.xlarge](#m5d.xlarge) [m5d.2xlarge](#m5d.2xlarge) 
 
-[m4.4xlarge](#m4.4xlarge) 
+[m5d.4xlarge](#m5d.4xlarge) [m5d.12xlarge](#m5d.12xlarge) [m5d.24xlarge](#m5d.24xlarge) [m5.large](#m5.large) [m5.xlarge](#m5.xlarge) 
 
-[m4.10xlarge](#m4.10xlarge) 
+[m5.2xlarge](#m5.2xlarge) [m5.4xlarge](#m5.4xlarge) [m5.12xlarge](#m5.12xlarge) [m5.24xlarge](#m5.24xlarge) [m4.large](#m4.large) 
 
-[m4.16xlarge](#m4.16xlarge) 
+[m4.xlarge](#m4.xlarge) [m4.2xlarge](#m4.2xlarge) [m4.4xlarge](#m4.4xlarge) [m4.10xlarge](#m4.10xlarge) [m4.16xlarge](#m4.16xlarge) 
 
-[c5d.large](#c5d.large) 
+[c5d.large](#c5d.large) [c5d.xlarge](#c5d.xlarge) [c5d.2xlarge](#c5d.2xlarge) [c5d.4xlarge](#c5d.4xlarge) [c5d.9xlarge](#c5d.9xlarge) 
 
-[c5d.xlarge](#c5d.xlarge) 
+[c5d.18xlarge](#c5d.18xlarge) [c5.large](#c5.large) [c5.xlarge](#c5.xlarge) [c5.2xlarge](#c5.2xlarge) [c5.4xlarge](#c5.4xlarge) 
 
-[c5d.2xlarge](#c5d.2xlarge) 
+[c5.9xlarge](#c5.9xlarge) [c5.18xlarge](#c5.18xlarge) [c4.large](#c4.large) [c4.xlarge](#c4.xlarge) [c4.2xlarge](#c4.2xlarge) 
 
-[c5d.4xlarge](#c5d.4xlarge) 
+[c4.4xlarge](#c4.4xlarge) [c4.8xlarge](#c4.8xlarge) [g3.4xlarge](#g3.4xlarge) [g3.8xlarge](#g3.8xlarge) [g3.16xlarge](#g3.16xlarge) 
 
-[c5d.9xlarge](#c5d.9xlarge) 
+[p2.xlarge](#p2.xlarge) [p2.8xlarge](#p2.8xlarge) [p2.16xlarge](#p2.16xlarge) [p3.2xlarge](#p3.2xlarge) [p3.8xlarge](#p3.8xlarge) 
 
-[c5d.18xlarge](#c5d.18xlarge) 
+[p3.16xlarge](#p3.16xlarge) [r4.large](#r4.large) [r4.xlarge](#r4.xlarge) [r4.2xlarge](#r4.2xlarge) [r4.4xlarge](#r4.4xlarge) 
 
-[c5.large](#c5.large) 
+[r4.8xlarge](#r4.8xlarge) [r4.16xlarge](#r4.16xlarge) [d2.2xlarge](#d2.2xlarge) [d2.4xlarge](#d2.4xlarge) [d2.8xlarge](#d2.8xlarge) 
 
-[c5.xlarge](#c5.xlarge) 
+[h1.2xlarge](#h1.2xlarge) [h1.4xlarge](#h1.4xlarge) [h1.8xlarge](#h1.8xlarge) [h1.16xlarge](#h1.16xlarge) [i3.large](#i3.large) 
 
-[c5.2xlarge](#c5.2xlarge) 
+[i3.xlarge](#i3.xlarge) [i3.2xlarge](#i3.2xlarge) [i3.4xlarge](#i3.4xlarge) [i3.8xlarge](#i3.8xlarge) [i3.16xlarge](#i3.16xlarge) 
 
-[c5.4xlarge](#c5.4xlarge) 
 
-[c5.9xlarge](#c5.9xlarge) 
 
-[c5.18xlarge](#c5.18xlarge) 
+[**Operating System : SUSE**](#SUSE) 
 
-[c4.large](#c4.large) 
+[t2.nano](#t2.nano) [t2.micro](#t2.micro) [t2.small](#t2.small) [t2.medium](#t2.medium) [t2.large](#t2.large) 
 
-[c4.xlarge](#c4.xlarge) 
+[t2.xlarge](#t2.xlarge) [t2.2xlarge](#t2.2xlarge) [m5d.large](#m5d.large) [m5d.xlarge](#m5d.xlarge) [m5d.2xlarge](#m5d.2xlarge) 
 
-[c4.2xlarge](#c4.2xlarge) 
+[m5d.4xlarge](#m5d.4xlarge) [m5d.12xlarge](#m5d.12xlarge) [m5d.24xlarge](#m5d.24xlarge) [m5.large](#m5.large) [m5.xlarge](#m5.xlarge) 
 
-[c4.4xlarge](#c4.4xlarge) 
+[m5.2xlarge](#m5.2xlarge) [m5.4xlarge](#m5.4xlarge) [m5.12xlarge](#m5.12xlarge) [m5.24xlarge](#m5.24xlarge) [m4.large](#m4.large) 
 
-[c4.8xlarge](#c4.8xlarge) 
+[m4.xlarge](#m4.xlarge) [m4.2xlarge](#m4.2xlarge) [m4.4xlarge](#m4.4xlarge) [m4.10xlarge](#m4.10xlarge) [m4.16xlarge](#m4.16xlarge) 
 
-[g3.4xlarge](#g3.4xlarge) 
+[c5d.large](#c5d.large) [c5d.xlarge](#c5d.xlarge) [c5d.2xlarge](#c5d.2xlarge) [c5d.4xlarge](#c5d.4xlarge) [c5d.9xlarge](#c5d.9xlarge) 
 
-[g3.8xlarge](#g3.8xlarge) 
+[c5d.18xlarge](#c5d.18xlarge) [c5.large](#c5.large) [c5.xlarge](#c5.xlarge) [c5.2xlarge](#c5.2xlarge) [c5.4xlarge](#c5.4xlarge) 
 
-[g3.16xlarge](#g3.16xlarge) 
+[c5.9xlarge](#c5.9xlarge) [c5.18xlarge](#c5.18xlarge) [c4.large](#c4.large) [c4.xlarge](#c4.xlarge) [c4.2xlarge](#c4.2xlarge) 
 
-[p2.xlarge](#p2.xlarge) 
+[c4.4xlarge](#c4.4xlarge) [c4.8xlarge](#c4.8xlarge) [g3.4xlarge](#g3.4xlarge) [g3.8xlarge](#g3.8xlarge) [g3.16xlarge](#g3.16xlarge) 
 
-[p2.8xlarge](#p2.8xlarge) 
+[p2.xlarge](#p2.xlarge) [p2.8xlarge](#p2.8xlarge) [p2.16xlarge](#p2.16xlarge) [p3.2xlarge](#p3.2xlarge) [p3.8xlarge](#p3.8xlarge) 
 
-[p2.16xlarge](#p2.16xlarge) 
+[p3.16xlarge](#p3.16xlarge) [r4.large](#r4.large) [r4.xlarge](#r4.xlarge) [r4.2xlarge](#r4.2xlarge) [r4.4xlarge](#r4.4xlarge) 
 
-[p3.2xlarge](#p3.2xlarge) 
+[r4.8xlarge](#r4.8xlarge) [r4.16xlarge](#r4.16xlarge) [d2.2xlarge](#d2.2xlarge) [d2.4xlarge](#d2.4xlarge) [d2.8xlarge](#d2.8xlarge) 
 
-[p3.8xlarge](#p3.8xlarge) 
+[h1.2xlarge](#h1.2xlarge) [h1.4xlarge](#h1.4xlarge) [h1.8xlarge](#h1.8xlarge) [h1.16xlarge](#h1.16xlarge) [i3.large](#i3.large) 
 
-[p3.16xlarge](#p3.16xlarge) 
+[i3.xlarge](#i3.xlarge) [i3.2xlarge](#i3.2xlarge) [i3.4xlarge](#i3.4xlarge) [i3.8xlarge](#i3.8xlarge) [i3.16xlarge](#i3.16xlarge) 
 
-[r4.large](#r4.large) 
 
-[r4.xlarge](#r4.xlarge) 
+# <a name="US East (Ohio)"></a> Region: US East (Ohio)
 
-[r4.2xlarge](#r4.2xlarge) 
+# <a name="AmazonCloudWatch"></a> Service: AmazonCloudWatch
+### <a name="Data Payload"></a> Product Family : Data Payload
 
-[r4.4xlarge](#r4.4xlarge) 
+`Ingested logs / GB 0.5000000000`
 
-[r4.8xlarge](#r4.8xlarge) 
+`Vended Ingested logs first 10TB / GB 0.5000000000`
 
-[r4.16xlarge](#r4.16xlarge) 
+`Vended Ingested logs first 20TB / GB 0.2500000000`
 
-[d2.2xlarge](#d2.2xlarge) 
+`Vended Ingested logs next 20TB / GB 0.1000000000`
 
-[d2.4xlarge](#d2.4xlarge) 
+`Vended Ingested logs over 50TB / GB 0.0500000000`
 
-[d2.8xlarge](#d2.8xlarge) 
+### <a name="Storage Snapshot"></a> Product Family : Storage Snapshot
 
-[h1.2xlarge](#h1.2xlarge) 
+`Ingested logs / GB 0.0300000000`
 
-[h1.4xlarge](#h1.4xlarge) 
+`Vended ingested logs / GB 0.0300000000`
 
-[h1.8xlarge](#h1.8xlarge) 
+### <a name="Metric"></a> Product Family : Metric
 
-[h1.16xlarge](#h1.16xlarge) 
+`First 10.000 Metrics / Metric / Month 0.3000000000`
 
-[i3.large](#i3.large) 
+`Next 240.000 Metrics / Metric / Month 0.1000000000`
 
-[i3.xlarge](#i3.xlarge) 
+`Next 750.000 Metrics / Metric / Month 0.0500000000`
 
-[i3.2xlarge](#i3.2xlarge) 
+`Over 1.000.000 Metrics / Metric / Month 0.0200000000`
 
-[i3.4xlarge](#i3.4xlarge) 
+### <a name="Alarm"></a> Product Family : Alarm
 
-[i3.8xlarge](#i3.8xlarge) 
+`Regular (5min) / alarm 0.1000000000`
 
-[i3.16xlarge](#i3.16xlarge) 
+`High Density (1 min) / alarm 0.1000000000`
 
+### <a name="Dashboard"></a> Product Family : Dashboard
 
-[**Windows**](#Windows) 
+`Dashboard / month 3.0000000000`
 
-[t2.nano](#t2.nano) 
+### <a name="API Request"></a> Product Family : API Request
 
-[t2.micro](#t2.micro) 
+`Metrics requested using GetMetricData / 1000 0.0000100000`
 
-[t2.small](#t2.small) 
 
-[t2.medium](#t2.medium) 
+# <a name="AmazonS3"></a> Service: AmazonS3
+### <a name="Storage"></a> Product Family : Storage
 
-[t2.large](#t2.large) 
+`Standard-Infrequent Access (S3 Standard-IA) Storage / Month / GB 0.0125000000`
 
-[t2.xlarge](#t2.xlarge) 
+`One Zone-Infrequent Access (S3 One Zone-IA) Storage / Month / GB 0.0100000000`
 
-[t2.2xlarge](#t2.2xlarge) 
+`Amazon Glacier Storage Storage / Month / GB 0.0040000000`
 
-[m5d.large](#m5d.large) 
+`Standard Storage First 50 TB / Month / GB 0.0230000000`
 
-[m5d.xlarge](#m5d.xlarge) 
+`Standard Storage Next 450 TB / Month / GB 0.0220000000`
 
-[m5d.2xlarge](#m5d.2xlarge) 
+`Standard Storage Over 500 TB / Month / GB 0.0210000000`
 
-[m5d.4xlarge](#m5d.4xlarge) 
+### <a name="API Request"></a> Product Family : API Request
 
-[m5d.12xlarge](#m5d.12xlarge) 
+`One Zone-Infrequent PUT, COPY, POST, or LIST Requests / 1000 Requests 0.0000100000`
 
-[m5d.24xlarge](#m5d.24xlarge) 
+`Standard-Infrequent Data Retrieved / GB 0.0100000000`
 
-[m5.large](#m5.large) 
+`Standard-Infrequent PUT, COPY, POST, or LIST Requests / 1000 Requests 0.0000100000`
 
-[m5.xlarge](#m5.xlarge) 
+`One Zone-Infrequent Data Scanned by S3 / GB 0.0020000000`
 
-[m5.2xlarge](#m5.2xlarge) 
+`Standard-Infrequent Data Returned by S3 Select / GB 0.0100000000`
 
-[m5.4xlarge](#m5.4xlarge) 
+`Standard-Infrequent Data Scanned by S3 / GB 0.0100000000`
 
-[m5.12xlarge](#m5.12xlarge) 
+`Data Scanned by S3 / GB 0.0020000000`
 
-[m5.24xlarge](#m5.24xlarge) 
+`One Zone-Infrequent GET, SELECT and all other Requests / 1000 Requests 0.0000010000`
 
-[m4.large](#m4.large) 
+`One Zone-Infrequent Data Returned by S3 Select / GB 0.0100000000`
 
-[m4.xlarge](#m4.xlarge) 
+`Data Returned by S3 Select / GB 0.0007000000`
 
-[m4.2xlarge](#m4.2xlarge) 
+`PUT, COPY, POST, or LIST Requests / 1000 Requests 0.0000050000`
 
-[m4.4xlarge](#m4.4xlarge) 
+`GET, SELECT and all other Requests / 1000 Requests 0.0000004000`
 
-[m4.10xlarge](#m4.10xlarge) 
+`Lifecycle Transition Requests into Standard – Infrequent Access or One Zone - Infrequent Access / 1000 Requests 0.0000004000`
 
-[m4.16xlarge](#m4.16xlarge) 
+`One Zone-Infrequent Data Retrieved / GB 0.0100000000`
 
-[c5d.large](#c5d.large) 
+`Standard-Infrequent GET, SELECT and all other Requests / 1000 Requests 0.0000010000`
 
-[c5d.xlarge](#c5d.xlarge) 
 
-[c5d.2xlarge](#c5d.2xlarge) 
-
-[c5d.4xlarge](#c5d.4xlarge) 
-
-[c5d.9xlarge](#c5d.9xlarge) 
-
-[c5d.18xlarge](#c5d.18xlarge) 
-
-[c5.large](#c5.large) 
-
-[c5.xlarge](#c5.xlarge) 
-
-[c5.2xlarge](#c5.2xlarge) 
-
-[c5.4xlarge](#c5.4xlarge) 
-
-[c5.9xlarge](#c5.9xlarge) 
-
-[c5.18xlarge](#c5.18xlarge) 
-
-[c4.large](#c4.large) 
-
-[c4.xlarge](#c4.xlarge) 
-
-[c4.2xlarge](#c4.2xlarge) 
-
-[c4.4xlarge](#c4.4xlarge) 
-
-[c4.8xlarge](#c4.8xlarge) 
-
-[g3.4xlarge](#g3.4xlarge) 
-
-[g3.8xlarge](#g3.8xlarge) 
-
-[g3.16xlarge](#g3.16xlarge) 
-
-[p2.xlarge](#p2.xlarge) 
-
-[p2.8xlarge](#p2.8xlarge) 
-
-[p2.16xlarge](#p2.16xlarge) 
-
-[p3.2xlarge](#p3.2xlarge) 
-
-[p3.8xlarge](#p3.8xlarge) 
-
-[p3.16xlarge](#p3.16xlarge) 
-
-[r4.large](#r4.large) 
-
-[r4.xlarge](#r4.xlarge) 
-
-[r4.2xlarge](#r4.2xlarge) 
-
-[r4.4xlarge](#r4.4xlarge) 
-
-[r4.8xlarge](#r4.8xlarge) 
-
-[r4.16xlarge](#r4.16xlarge) 
-
-[d2.2xlarge](#d2.2xlarge) 
-
-[d2.4xlarge](#d2.4xlarge) 
-
-[d2.8xlarge](#d2.8xlarge) 
-
-[h1.2xlarge](#h1.2xlarge) 
-
-[h1.4xlarge](#h1.4xlarge) 
-
-[h1.8xlarge](#h1.8xlarge) 
-
-[h1.16xlarge](#h1.16xlarge) 
-
-[i3.large](#i3.large) 
-
-[i3.xlarge](#i3.xlarge) 
-
-[i3.2xlarge](#i3.2xlarge) 
-
-[i3.4xlarge](#i3.4xlarge) 
-
-[i3.8xlarge](#i3.8xlarge) 
-
-[i3.16xlarge](#i3.16xlarge) 
-
-
-[**SUSE**](#SUSE) 
-
-[t2.nano](#t2.nano) 
-
-[t2.micro](#t2.micro) 
-
-[t2.small](#t2.small) 
-
-[t2.medium](#t2.medium) 
-
-[t2.large](#t2.large) 
-
-[t2.xlarge](#t2.xlarge) 
-
-[t2.2xlarge](#t2.2xlarge) 
-
-[m5d.large](#m5d.large) 
-
-[m5d.xlarge](#m5d.xlarge) 
-
-[m5d.2xlarge](#m5d.2xlarge) 
-
-[m5d.4xlarge](#m5d.4xlarge) 
-
-[m5d.12xlarge](#m5d.12xlarge) 
-
-[m5d.24xlarge](#m5d.24xlarge) 
-
-[m5.large](#m5.large) 
-
-[m5.xlarge](#m5.xlarge) 
-
-[m5.2xlarge](#m5.2xlarge) 
-
-[m5.4xlarge](#m5.4xlarge) 
-
-[m5.12xlarge](#m5.12xlarge) 
-
-[m5.24xlarge](#m5.24xlarge) 
-
-[m4.large](#m4.large) 
-
-[m4.xlarge](#m4.xlarge) 
-
-[m4.2xlarge](#m4.2xlarge) 
-
-[m4.4xlarge](#m4.4xlarge) 
-
-[m4.10xlarge](#m4.10xlarge) 
-
-[m4.16xlarge](#m4.16xlarge) 
-
-[c5d.large](#c5d.large) 
-
-[c5d.xlarge](#c5d.xlarge) 
-
-[c5d.2xlarge](#c5d.2xlarge) 
-
-[c5d.4xlarge](#c5d.4xlarge) 
-
-[c5d.9xlarge](#c5d.9xlarge) 
-
-[c5d.18xlarge](#c5d.18xlarge) 
-
-[c5.large](#c5.large) 
-
-[c5.xlarge](#c5.xlarge) 
-
-[c5.2xlarge](#c5.2xlarge) 
-
-[c5.4xlarge](#c5.4xlarge) 
-
-[c5.9xlarge](#c5.9xlarge) 
-
-[c5.18xlarge](#c5.18xlarge) 
-
-[c4.large](#c4.large) 
-
-[c4.xlarge](#c4.xlarge) 
-
-[c4.2xlarge](#c4.2xlarge) 
-
-[c4.4xlarge](#c4.4xlarge) 
-
-[c4.8xlarge](#c4.8xlarge) 
-
-[g3.4xlarge](#g3.4xlarge) 
-
-[g3.8xlarge](#g3.8xlarge) 
-
-[g3.16xlarge](#g3.16xlarge) 
-
-[p2.xlarge](#p2.xlarge) 
-
-[p2.8xlarge](#p2.8xlarge) 
-
-[p2.16xlarge](#p2.16xlarge) 
-
-[p3.2xlarge](#p3.2xlarge) 
-
-[p3.8xlarge](#p3.8xlarge) 
-
-[p3.16xlarge](#p3.16xlarge) 
-
-[r4.large](#r4.large) 
-
-[r4.xlarge](#r4.xlarge) 
-
-[r4.2xlarge](#r4.2xlarge) 
-
-[r4.4xlarge](#r4.4xlarge) 
-
-[r4.8xlarge](#r4.8xlarge) 
-
-[r4.16xlarge](#r4.16xlarge) 
-
-[d2.2xlarge](#d2.2xlarge) 
-
-[d2.4xlarge](#d2.4xlarge) 
-
-[d2.8xlarge](#d2.8xlarge) 
-
-[h1.2xlarge](#h1.2xlarge) 
-
-[h1.4xlarge](#h1.4xlarge) 
-
-[h1.8xlarge](#h1.8xlarge) 
-
-[h1.16xlarge](#h1.16xlarge) 
-
-[i3.large](#i3.large) 
-
-[i3.xlarge](#i3.xlarge) 
-
-[i3.2xlarge](#i3.2xlarge) 
-
-[i3.4xlarge](#i3.4xlarge) 
-
-[i3.8xlarge](#i3.8xlarge) 
-
-[i3.16xlarge](#i3.16xlarge) 
-
-
-## <a name="US East (Ohio)"></a> Region: US East (Ohio)
+# <a name="AWSDataTransfer"></a> Service: AWSDataTransfer
 ### <a name="Data Transfer"></a> Product Family : Data Transfer
 
 #### Data Transfer IN To Amazon EC2 From Internet
@@ -452,6 +243,8 @@
 `All data transfer in per GB 0.00 `
 
 #### Data Transfer OUT From Amazon EC2 From Internet
+
+`All data transfer in and out within the region per GB 0.01`
 
 `Outgoing traffic cost per GB up to 1 GB / Month 0.0`
 
@@ -463,8 +256,11 @@
 
 `Outgoing traffic cost per GB grater than 150 TB / Month 0.05`
 
-#### Data Transfer Across AZ within this Region
-`All data transfer in and out within the region per GB 0.01`
+
+# <a name="AmazonVPC"></a> Service: AmazonVPC
+### <a name="Cloud Connectivity"></a> Product Family : Cloud Connectivity
+
+`VPN Connection per hour 0.05`
 
 ### <a name="VpcEndpoint"></a> Product Family : VpcEndpoint
 
@@ -472,23 +268,39 @@
 
 `Data Processed by VPC Endpoints per GB 0.01`
 
-### <a name="Cloud Connectivity"></a> Product Family : Cloud Connectivity
 
-`VPN Connection per hour 0.05`
-
+# <a name="AmazonEC2"></a> Service: AmazonEC2
 ### <a name="IP Address"></a> Product Family : IP Address
+
+`Additional Elastic IP address attached to a running instance per hour (prorated) 0.005`
 
 `Elastic IP address not attached to a running instance for the first hour 0.0`
 
 `Elastic IP address not attached to a running instance per hour (prorated) 0.005`
-
-`Additional Elastic IP address attached to a running instance per hour (prorated) 0.005`
 
 ### <a name="NAT Gateway"></a> Product Family : NAT Gateway
 
 `Nat Gateway per GB 0.045`
 
 `NAT Gateway per hour 0.045`
+
+### <a name="Storage"></a> Product Family : Storage
+
+`Amazon EBS Throughput Optimized HDD (st1) volumes per GB-month of provisioned storage 0.0450000000`
+
+`Amazon EBS Cold HDD (sc1) volumes per GB-month of provisioned storage 0.0250000000`
+
+`Amazon EBS General Purpose SSD (gp2) volumes per GB-month of provisioned storage 0.1000000000`
+
+`Amazon EBS Provisioned IOPS SSD (io1) volumes per GB-month of provisioned storage 0.1250000000`
+
+### <a name="System Operation"></a> Product Family : System Operation
+
+`Amazon EBS Provisioned IOPS SSD (io1) volumes per provisioned IOPS-month 0.0650000000`
+
+### <a name="Storage Snapshot"></a> Product Family : Storage Snapshot
+
+`Amazon EBS Snapshots to Amazon S3 per GB-month of data stored 0.0500000000`
 
 ### <a name="Compute Instance"></a> Product Family : Compute Instance
 #### <a name="RHEL"></a> OS: RHEL
